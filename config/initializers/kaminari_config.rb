@@ -10,3 +10,5 @@ Kaminari.configure do |config|
   # config.param_name = :page
   # config.params_on_first_page = false
 end
+
+PAGE_SIZES = [25, 50, 75]

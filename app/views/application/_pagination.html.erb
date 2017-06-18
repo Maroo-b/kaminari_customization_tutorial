@@ -1,0 +1,13 @@
+<div class="clearfix">
+  <div class="pull-left">
+    <%= paginate items %>
+  </div>
+  <div class="pagination-filter pull-right">
+    <span>Items per page</span>
+    <ul>
+      <% PAGE_SIZES.each do |size| %>
+        <li><%= link_to size, url_for(per_page: size) %></li>
+      <% end %>
+    </ul>
+  </div>
+</div>
