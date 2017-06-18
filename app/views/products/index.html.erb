@@ -1,0 +1,8 @@
+<h3 class="text-center">Products</h3>
+
+<%= render partial: 'item_table', locals: {items: @products} %>
+
+
+<div class="text-center">
+  <%= paginate @products %>
+</div>
